@@ -62,7 +62,8 @@ Timerise Skills and how to install them all at once.
 The skill activates automatically when a task asks to bump a version, cut, ship or tag a release, prepare
 release notes, or decide what version the next release should be. Invoke it explicitly with `/bumpv` in
 Claude Code, `$bumpv` in Codex CLI, or from `/skills` in Gemini CLI. `/bumpv patch`, `/bumpv minor` and
-`/bumpv major` force the level; `/bumpv --dry-run` stops at the plan with no commit and no tag.
+`/bumpv major` force the level; `/bumpv --dry-run`, or a request to preview the release, writes the edits
+uncommitted and stops at the plan with no commit and no tag.
 
 Each host matches a task against the description its own way, so invoke the skill explicitly on a first run
 rather than assuming it fired. Only `SKILL.md` is read up front; the `references/` files load on demand.

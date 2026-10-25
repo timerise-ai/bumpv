@@ -4,7 +4,7 @@ The engineering ledger for the person editing this skill. The earlier implementa
 `SKILL.md` carrying the same procedure: the clean-tree precondition, the version-source table, the
 commit-to-level mapping, the changelog locations, the conditional context-file note, the annotated tag and
 the clean commit policy. The 0.1.0 audit compared it with the Timerise skill standard and with the
-repositories it releases, and split it into the references here. The ledger has 14 entries.
+repositories it releases, and split it into the references here. The ledger has 16 entries.
 
 ## Fixed
 
@@ -56,3 +56,11 @@ Designed in this skill and not yet run in a release:
     repository with no tags and a `package.json` without a version field; prompts 2 and 3 work on public
     clones. The line in `SKILL.md` saying a public clone is not an external service was written for these
     runs.
+15. **A preview request is the dry run, and the dry run writes its edits.** Found by the 0.1.0 evals: one
+    agent read "do not commit or tag" as a preview that changes nothing and only described the changelog;
+    another wrote it with a "release preview only" line that the release would have committed. The
+    invocation table and [release-files.md](release-files.md) now say both.
+16. **Keep a Changelog headings only, and a dry-run report that carries the plan and the next steps.** Found
+    by the 0.1.0 evals: one agent invented a `### Development tooling` heading and ended its dry run without
+    the commits behind the level or the push as the user's. Quick-start step 5 and
+    [release-files.md](release-files.md) now name both.

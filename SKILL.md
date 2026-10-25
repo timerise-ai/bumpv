@@ -36,7 +36,7 @@ the version in its tags alone. A first release with no tags is covered.
 |---|---|
 | `/bumpv` | Decide the level from the commits since the last tag, then release |
 | `/bumpv patch`, `/bumpv minor`, `/bumpv major` | Force the level and skip the decision |
-| `/bumpv --dry-run` | Every step up to the plan; edits stay uncommitted, no commit and no tag |
+| `/bumpv --dry-run`, or a request to preview a release or not to commit or tag | Every step up to the plan; the edits are written to the working tree as the release would commit them and left unstaged, no commit and no tag |
 
 A repository named but not present is cloned from its public URL into a scratch directory; that clone is
 not an external service in an eval's sense. The working directory is left as it was.
@@ -127,7 +127,9 @@ history, and any documented release convention that limits what the release comm
 4. Edit the manifest, the changelog, the README release line and, when warranted, the context file:
    [release-files.md](references/release-files.md).
 5. Show the plan: project type, current and new version, the level and the commits that drove it, the
-   files changed. A dry run stops here.
+   files changed. A dry run stops here, and its report is this plan, every item of it, then the next steps:
+   `/bumpv` to commit and tag, and the push and `gh release create` as the user's. Describing the edits
+   instead of writing them is not a dry run.
 6. Commit, tag, verify, and hand the push to the user: [commit-and-tag.md](references/commit-and-tag.md).
 
 ## Reference directory

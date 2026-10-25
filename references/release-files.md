@@ -27,7 +27,8 @@ Record the release in the most conventional location that exists:
 3. Neither: create `CHANGELOG.md` with the Keep a Changelog preamble and the new section.
 
 Write the section from the commits in the range, for a person reading release notes: open with one or two
-sentences on what the release is, then `### Added`, `### Changed`, `### Fixed` and `### Removed` as needed.
+sentences on what the release is, then Keep a Changelog's own headings as needed, `### Added`,
+`### Changed`, `### Deprecated`, `### Removed`, `### Fixed` and `### Security`, and no others.
 Call out breaking changes explicitly, with what broke and how to migrate. No raw commit hashes. A release
 that changes only documentation says so in its first line.
 
@@ -51,5 +52,9 @@ read on every session, so a note that adds nothing costs every later session.
 ## After the edits
 
 Every place that names the version now names the new one: the manifest, the newest changelog section and
-the README line. The tag created in [commit-and-tag.md](commit-and-tag.md) makes the fourth. In a dry run,
-the edits stay in the working tree, uncommitted, for the user to inspect with `git diff`.
+the README line. The tag created in [commit-and-tag.md](commit-and-tag.md) makes the fourth.
+
+In a dry run, a request to preview the release included, the edits are written exactly as the release would
+commit them, with no draft or preview line in any file, and stay in the working tree, unstaged and
+uncommitted, for the user to inspect with `git diff`. Describing the edits in the report instead of writing
+them is not a dry run.
