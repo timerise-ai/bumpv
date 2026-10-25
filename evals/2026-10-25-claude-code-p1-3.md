@@ -22,3 +22,11 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/bumpv/actions/runs/40199945208
 ---
+
+Rubric 7/8. Dry run as written: `CHANGELOG.md` written and left untracked, no commit, no tag, tag-only
+`0.1.0`, no version field or test script, and the plan block filled line by line with the next steps.
+Item 5 fails: the new `CHANGELOG.md` ends with a Keep a Changelog comparison link whose URL is a placeholder,
+`OWNER/REPO`, and the report says "Replace it before committing", so the file is not what the release would
+commit. The skill is silent on comparison links, and "no draft or preview line" did not cover a placeholder
+to fill in. The 0.1.1 run of the same model left the link out for the same reason (no remote), so this is
+the gap, not the model.
