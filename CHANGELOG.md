@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2026-10-25
+
+Fix release, from scoring the prompt-1 agent eval runs against 0.1.1.
+
+### Changed
+
+- `SKILL.md`: quick-start step 5 carries the plan as a fixed block (project type, version, level and the
+  commits that drove it, files changed, next steps), every line filled, ending a dry run's report.
+- `references/commit-and-tag.md`: the release report uses the same block, then the commit and the tag.
+- `references/provenance.md`: an entry under *Added* for the block.
+
 ## [0.1.1] - 2026-10-25
 
 Fix release, from scoring the prompt-1 agent eval runs against 0.1.0.
