@@ -32,6 +32,10 @@ sentences on what the release is, then Keep a Changelog's own headings as needed
 Call out breaking changes explicitly, with what broke and how to migrate. No raw commit hashes. A release
 that changes only documentation says so in its first line.
 
+Add Keep a Changelog's comparison links at the foot only when the file already carries them and
+`git remote get-url origin` prints the repository's URL. With no remote, leave them out: never a
+placeholder such as `OWNER/REPO`.
+
 The date is today's date in `YYYY-MM-DD`.
 
 ## The README current-release line
@@ -55,6 +59,6 @@ Every place that names the version now names the new one: the manifest, the newe
 the README line. The tag created in [commit-and-tag.md](commit-and-tag.md) makes the fourth.
 
 In a dry run, a request to preview the release included, the edits are written exactly as the release would
-commit them, with no draft or preview line in any file, and stay in the working tree, unstaged and
-uncommitted, for the user to inspect with `git diff`. Describing the edits in the report instead of writing
-them is not a dry run.
+commit them, with no draft or preview line and no placeholder for the user to replace in any file, and stay
+in the working tree, unstaged and uncommitted, for the user to inspect with `git diff`.
+Describing the edits in the report instead of writing them is not a dry run.

@@ -4,7 +4,7 @@ The engineering ledger for the person editing this skill. The earlier implementa
 `SKILL.md` carrying the same procedure: the clean-tree precondition, the version-source table, the
 commit-to-level mapping, the changelog locations, the conditional context-file note, the annotated tag and
 the clean commit policy. The 0.1.0 audit compared it with the Timerise skill standard and with the
-repositories it releases, and split it into the references here. The ledger has 17 entries.
+repositories it releases, and split it into the references here. The ledger has 18 entries.
 
 ## Fixed
 
@@ -68,3 +68,8 @@ Designed in this skill and not yet run in a release:
     quick-start step 5, one agent again ended its dry run with no level, no commits behind it and no next
     steps. Step 5 now carries the block, one line per item, and
     [commit-and-tag.md](commit-and-tag.md) reports with it.
+18. **No placeholder in the release's edits.** Found by the 0.1.2 evals: with no remote, one agent ended the
+    new changelog with a comparison link to `OWNER/REPO` and asked the user to replace it before committing.
+    Comparison links are now added only when the file already has them and `git remote get-url origin`
+    prints a URL, which exits 2 with `No such remote 'origin'` otherwise (git 2.47.0), and quick-start
+    step 4 forbids placeholders.

@@ -124,7 +124,8 @@ history, and any documented release convention that limits what the release comm
 2. Find the version source, the last tag, its prefix and the commit range:
    [version-sources.md](references/version-sources.md).
 3. Decide the level, or take the forced one: [bump-level.md](references/bump-level.md).
-4. Edit the manifest, the changelog, the README release line and, when warranted, the context file:
+4. Edit the manifest, the changelog, the README release line and, when warranted, the context file, with
+   no placeholder left for the user to fill in:
    [release-files.md](references/release-files.md).
 5. Show the plan as this block, every line filled, however short the rest of the report. A dry run stops
    here and ends its report with it; describing the edits instead of writing them is not a dry run.
