@@ -22,3 +22,10 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/bumpv/actions/runs/40198421355
 ---
+
+Rubric 8/8. It traced the version source through `version-sources.md` to tag-only, quoted the first-release
+rule for `0.1.0` with the `v` prefix, and listed both commits in the range. It wrote `CHANGELOG.md` with the
+Keep a Changelog preamble and a `## [0.1.0]` section under `Added`, left it uncommitted, and added no
+version field and no test script. The report carries the plan, the commit and tag commands, and the push and
+`gh release create` as the user's. One small slip, not scored: its `gh release create` passes the whole
+`CHANGELOG.md` as notes, not the new section.
