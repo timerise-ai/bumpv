@@ -4,7 +4,7 @@ The engineering ledger for the person editing this skill. The earlier implementa
 `SKILL.md` carrying the same procedure: the clean-tree precondition, the version-source table, the
 commit-to-level mapping, the changelog locations, the conditional context-file note, the annotated tag and
 the clean commit policy. The 0.1.0 audit compared it with the Timerise skill standard and with the
-repositories it releases, and split it into the references here. The ledger has 16 entries.
+repositories it releases, and split it into the references here. The ledger has 17 entries.
 
 ## Fixed
 
@@ -64,3 +64,7 @@ Designed in this skill and not yet run in a release:
     by the 0.1.0 evals: one agent invented a `### Development tooling` heading and ended its dry run without
     the commits behind the level or the push as the user's. Quick-start step 5 and
     [release-files.md](release-files.md) now name both.
+17. **The plan as a fixed block.** Found by the 0.1.1 evals: with the plan's contents listed as prose in
+    quick-start step 5, one agent again ended its dry run with no level, no commits behind it and no next
+    steps. Step 5 now carries the block, one line per item, and
+    [commit-and-tag.md](commit-and-tag.md) reports with it.

@@ -126,10 +126,18 @@ history, and any documented release convention that limits what the release comm
 3. Decide the level, or take the forced one: [bump-level.md](references/bump-level.md).
 4. Edit the manifest, the changelog, the README release line and, when warranted, the context file:
    [release-files.md](references/release-files.md).
-5. Show the plan: project type, current and new version, the level and the commits that drove it, the
-   files changed. A dry run stops here, and its report is this plan, every item of it, then the next steps:
-   `/bumpv` to commit and tag, and the push and `gh release create` as the user's. Describing the edits
-   instead of writing them is not a dry run.
+5. Show the plan as this block, every line filled, however short the rest of the report. A dry run stops
+   here and ends its report with it; describing the edits instead of writing them is not a dry run.
+
+   ```
+   Project type:  <the manifest, or tag-only>
+   Version:       <current, or none> to <new>, tag <vX.Y.Z>
+   Level:         <MAJOR, MINOR, PATCH or first release>, driven by:
+                  <each commit that set it, hash and subject>
+   Files changed: <each file the release edits>
+   Next steps:    /bumpv to commit and tag (dry run only); then git push --follow-tags and
+                  gh release create <vX.Y.Z>, both the user's to run
+   ```
 6. Commit, tag, verify, and hand the push to the user: [commit-and-tag.md](references/commit-and-tag.md).
 
 ## Reference directory

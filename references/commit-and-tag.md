@@ -60,8 +60,9 @@ this step is not optional.
 
 ## Report and hand over
 
-Report the project type, the old and new version, the level and the commits that drove it, the files
-changed, the commit and the tag. Then name the user's next steps, without running them:
+Report with the plan block of quick-start step 5 in `SKILL.md`, every line filled: the project type, the
+old and new version, the level and the commits that drove it, the files changed; then the commit and the
+tag. Then name the user's next steps, without running them:
 
 ```bash
 git push --follow-tags
