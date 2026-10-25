@@ -22,3 +22,7 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/bumpv/actions/runs/40200539510
 ---
+
+Rubric 8/8. `CHANGELOG.md` written and left untracked, with no comparison links "because the repo has no git
+remote", which is the 0.1.3 rule; no commit, no tag, tag-only `0.1.0`, no version field, no test script,
+and the plan block filled line by line with the next steps.
