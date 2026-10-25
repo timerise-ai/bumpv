@@ -22,3 +22,9 @@ isolated: true
 timedOut: false
 runUrl: https://github.com/timerise-ai/bumpv/actions/runs/40199387108
 ---
+
+Rubric 8/8. It took the preview as the dry run and wrote `CHANGELOG.md` with the Keep a Changelog preamble
+and an `Added` section, left it unstaged, and committed and tagged nothing. Tag-only, first release `0.1.0`
+with the `v` prefix, both commits named, no version field and no test script added. The report carries the
+plan and the next steps: `/bumpv` without the preview to commit and tag, then the push and
+`gh release create` as the user's. The 0.1.1 wording on the dry run is what changed its behaviour.
